@@ -10,6 +10,11 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SelenideTest {
 
+    @BeforeAll
+    public static void setupAll() {
+        WebDriverManager.chromedriver().setup();
+    }
+
 
 
 @Test
